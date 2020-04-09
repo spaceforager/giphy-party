@@ -17,7 +17,7 @@ function addGIF(result) {
 		let newCol = document.createElement('DIV');
 		newCol.classList.add('col-md-4', 'col-12', 'mb-4');
 		let newGIF = document.createElement('IMG');
-		newGIF.setAttribute('src', `${result.data[randIndex].url}`);
+		newGIF.setAttribute('src', `${result.data[randIndex].images.downsized.url}`);
 
 		newCol.appendChild(newGIF);
 		gifDisplay.appendChild(newCol);
